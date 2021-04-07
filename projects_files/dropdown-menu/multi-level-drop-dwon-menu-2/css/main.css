@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	background-color: #dddddd;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	background-color: #565656;
+}
+
+ul li a {
+	display: inline-block;
+	text-decoration: none;
+	color: #ffffff;
+	padding: 12px 32px;
+	font-size: 2rem;
+	font-weight: 600;
+	transition: all .2s;
+}
+
+.active, ul li:hover {
+	background-color: #4caf50;
+}
+
+.sub-menu  ul, .sub-menu-2 ul {
+	display: none;
+}
+
+.sub-menu:hover > ul, .sub-menu-2:hover > ul {
+	display: block;
+	position: absolute;
+}
+
+.sub-menu-2 > ul {
+	left: 100%;
+	margin-top: -44px;
+}
